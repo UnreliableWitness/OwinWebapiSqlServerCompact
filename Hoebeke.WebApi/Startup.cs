@@ -18,9 +18,6 @@ namespace Hoebeke.WebApi
             var config = new HttpConfiguration();
             config.Routes.MapHttpRoute("Default", "{controller}/{customerID}", new { controller = "Customer", customerID = RouteParameter.Optional });
 
-            //config.Formatters.XmlFormatter.UseXmlSerializer = true;
-            //config.Formatters.Remove(config.Formatters.JsonFormatter);
-            // config.Formatters.JsonFormatter.UseDataContractJsonSerializer = true;
             config.Formatters.Clear();
             config.Formatters.Add(new JsonMediaTypeFormatter());
 
@@ -29,8 +26,6 @@ namespace Hoebeke.WebApi
 
             config.DependencyResolver = new NinjectDependencyResolver(Container);
             builder.UseWebApi(config);
-
-            database is auto constructed, get some migrations going
         }
     }
 }

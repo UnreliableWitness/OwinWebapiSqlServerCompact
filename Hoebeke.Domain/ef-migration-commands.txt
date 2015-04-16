@@ -1,0 +1,5 @@
+﻿enable-migrations -project:hoebeke.domain -startupproject:hoebeke.webapi
+
+add-migration First -project:hoebeke.domain -startupproject:hoebeke.webapi 
+
+update-database -project:hoebeke.domain -startupproject:hoebeke.webapi -verbose
