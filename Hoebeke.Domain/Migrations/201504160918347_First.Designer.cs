@@ -13,7 +13,7 @@ namespace Hoebeke.Domain.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201504160852106_First"; }
+            get { return "201504160918347_First"; }
         }
         
         string IMigrationMetadata.Source

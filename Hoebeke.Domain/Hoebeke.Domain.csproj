@@ -58,9 +58,9 @@
   <ItemGroup>
     <Compile Include="Customer.cs" />
     <Compile Include="CustomerContext.cs" />
-    <Compile Include="Migrations\201504160852106_First.cs" />
-    <Compile Include="Migrations\201504160852106_First.Designer.cs">
-      <DependentUpon>201504160852106_First.cs</DependentUpon>
+    <Compile Include="Migrations\201504160918347_First.cs" />
+    <Compile Include="Migrations\201504160918347_First.Designer.cs">
+      <DependentUpon>201504160918347_First.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,12 +74,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201504160852106_First.resx">
-      <DependentUpon>201504160852106_First.cs</DependentUpon>
-    </EmbeddedResource>
+    <Content Include="ef-migration-commands.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ef-migration-commands.txt" />
+    <EmbeddedResource Include="Migrations\201504160918347_First.resx">
+      <DependentUpon>201504160918347_First.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

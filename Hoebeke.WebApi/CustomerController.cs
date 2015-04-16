@@ -35,7 +35,7 @@ namespace Hoebeke.WebApi
 
             await _customerRepository.InsertCustomerAsync(customer);
 
-            return CreatedAtRoute("DefaultApi", new { id = customer.Id }, customer);
+            return Ok(customer.Id);
         }
     }
 }

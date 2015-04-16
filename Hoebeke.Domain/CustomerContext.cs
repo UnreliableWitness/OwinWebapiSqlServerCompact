@@ -5,7 +5,8 @@ namespace Hoebeke.Domain
 {
     public class CustomerContext : DbContext
     {
-        public CustomerContext():base(new SqlCeConnection(@"Data Source=Database.sdf;Persist Security Info=False;"),true)
+        public CustomerContext()
+            : base(new SqlCeConnection(@"Data Source=|DataDirectory|\Database.sdf;Persist Security Info=False;"), true)
         {
             //Database.SetInitializer(new DropCreateDatabaseAlways<CustomerContext>());
         }
